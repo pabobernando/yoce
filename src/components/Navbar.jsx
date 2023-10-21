@@ -14,18 +14,10 @@ function Navbar() {
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-    // Fungsi untuk membuka tautan WhatsApp
     const openWhatsApp = () => {
-        // Nomor WhatsApp yang dituju
         const phoneNumber = '6287722976066';
-
-        // Pesan opsional yang ingin Anda sertakan
         const message = 'Hello Yoce Santoso Jaya, I am interested in your product.';
-
-        // Membuat URL dengan format khusus untuk membuka WhatsApp
         const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-
-        // Membuka tautan WhatsApp dalam tab baru
         window.open(whatsappUrl, '_blank');
     }
 
@@ -63,7 +55,7 @@ function Navbar() {
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                         <a
                             href="#"
-                            className="text-sm font-semibold leading-6 text-gray-900"
+                            className="text-sm font-semibold leading-6 text-gray-200"
                             onClick={openWhatsApp}
                         >
                             Contact Us <span aria-hidden="true">&rarr;</span>
@@ -78,7 +70,7 @@ function Navbar() {
                                 <span className="sr-only">Your Company</span>
                                 <img
                                     className="h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                    src={Logo}
                                     alt=""
                                 />
                             </a>

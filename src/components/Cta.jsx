@@ -4,11 +4,20 @@ import Images2 from '../image/images2.jpeg'
 import Images3 from '../image/images3.jpeg'
 import Images4 from '../image/images4.jpeg'
 import Images5 from '../image/images5.png'
+import ImagesBg from '../image/imagesBg.jpeg'
 
 function Cta() {
+
+  const backgroundStyle = {
+    backgroundImage: `url(${ImagesBg})`, 
+    backgroundSize: 'cover', 
+    backgroundPosition: 'center', 
+  };
+
+
   return (
     <div>
-        <div className="relative isolate -z-10">
+        <div style={backgroundStyle} className="relative isolate -z-10">
           <svg
             className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
             aria-hidden="true"
@@ -49,10 +58,10 @@ function Cta() {
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                     Yoce Santoso Jaya
                   </h1>
-                  <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                  <p className="relative mt-6 text-lg leading-8 text-gray-200 sm:max-w-md lg:max-w-none">
                   We have strategic partners highly committed to the business , who comply with international standards, production, plants to shipment anywhere in the world.
                   </p>
                 </div>
