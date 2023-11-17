@@ -15,7 +15,7 @@ function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     const openWhatsApp = () => {
-        const phoneNumber = '6287722976066';
+        const phoneNumber = '6281934354448';
         const message = 'Hello Yoce Santoso Jaya, I am interested in your product.';
         const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
         window.open(whatsappUrl, '_blank');
